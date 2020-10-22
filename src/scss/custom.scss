@@ -1,0 +1,15 @@
+//CONTENTS
+
+//Variable overrides
+//Bootstrap and its default values
+//Custom SCSS
+
+//Variable overrides
+@import "variables";
+
+//Bootstrap and its default values
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+//Custom SCSS
+@import "base";
+@import "./components/Header";

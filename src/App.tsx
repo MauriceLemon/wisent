@@ -1,16 +1,14 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './scss/custom.scss';
 
-import Button from 'react-bootstrap/Button';
+import Layout from "./components/Layout";
 
-function App() {
-  return (
-      <div>
-        <h1>Hello!</h1>
-        <p>Initial setup</p>
-        <Button>Test button!</Button>
-      </div>
-  );
-}
+const App: React.FC = () => {
+    return <>
+        <Layout>
+            <p>Dashboard</p>
+        </Layout>
+    </>
+};
 
 export default App;
