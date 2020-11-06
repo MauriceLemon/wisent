@@ -1,81 +1,81 @@
 .header {
-    &__brand {
-        width: 15.625rem;
+  &__brand {
+    width: 15.625rem;
 
-        img {
-            height: 2.5rem;
+    img {
+      height: 2.5rem;
+    }
+  }
+
+  &__logo-text {
+    font-size: 1.4rem;
+    font-weight: $font-weight-bold;
+    color: $primary;
+  }
+
+  &__search {
+    border-bottom: 1px solid transparent !important;
+    text-indent: 1.8rem;
+    border-radius: 0;
+
+    background-image: url('../../assets/icons/search.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+
+    &:focus {
+      box-shadow: none;
+      border-bottom: 1px solid $primary !important;
+    }
+  }
+
+  &__navigation {
+    height: 4.5rem;
+    padding: 1rem 2.5rem;
+
+    &__link {
+      &,
+      &:link,
+      &:visited {
+        position: relative;
+
+        .header__navigation__icon {
+          width: 1.5rem;
+          height: 1.5rem;
         }
+      }
+
+      &:active,
+      &:focus,
+      &:hover {
+        .header__navigation__icon {
+          fill: $primary;
+        }
+      }
     }
 
-    &__logo-text {
-        font-size: 1.4rem;
-        font-weight: $font-weight-bold;
-        color: $primary;
+    &__badge {
+      height: .75rem;
+      width: .75rem;
+      background-color: $danger;
+      border-radius: .75rem;
+      border: 1px solid white;
+      position: absolute;
+      right: -2px;
+      top: 6px;
     }
 
-    &__search {
-        border-bottom: 1px solid transparent !important;
-        text-indent: 1.8rem;
-        border-radius: 0;
+    &__dropdown {
+      > a {
+        padding: 0 !important;
 
-        background-image: url('../../assets/icons/search.svg');
-        background-repeat: no-repeat;
-        background-position: left center;
+        span {
+          color: $black;
 
-        &:focus {
-            box-shadow: none;
-            border-bottom: 1px solid $primary !important;
+          &:hover {
+            color: $primary;
+          }
         }
+      }
     }
-
-    &__navigation {
-        height: 4.5rem;
-        padding: 1rem 2.5rem;
-
-        &__link {
-            &,
-            &:link,
-            &:visited {
-                position: relative;
-
-                .header__navigation__icon {
-                    width: 1.5rem;
-                    height: 1.5rem;
-                }
-            }
-
-            &:active,
-            &:focus,
-            &:hover {
-                .header__navigation__icon {
-                    fill: $primary;
-                }
-            }
-        }
-
-        &__badge {
-            height: .75rem;
-            width: .75rem;
-            background-color: $danger;
-            border-radius: .75rem;
-            border: 1px solid white;
-            position: absolute;
-            right: -2px;
-            top: 6px;
-        }
-
-        &__dropdown {
-            > a {
-                padding: 0 !important;
-
-                span {
-                    color: $black;
-
-                    &:hover {
-                        color: $primary;
-                    }
-                }
-            }
-        }
-    }
+  }
 }
