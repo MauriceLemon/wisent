@@ -7,13 +7,15 @@ import {
   Form,
   FormControl,
 } from 'react-bootstrap';
+import wisentLogo from '../assets/icons/wisent-logo.svg';
+import userPicture from '../assets/img/johnsnow.png';
 
 const Header: React.FC = () => (
   <header className="header bg-white">
     <Navbar expand="sm" sticky="top" className="border-bottom border-light p-0">
       <Navbar.Brand href="/" className="header__brand border-right border-light px-4 py-3 mr-5">
         <Image
-          src={require('../assets/icons/wisent-logo.svg')}
+          src={wisentLogo}
           alt="Wisent Logo"
         />
         <span className="header__logo-text align-middle px-3">Wisent</span>
@@ -50,7 +52,7 @@ const Header: React.FC = () => (
         <NavDropdown
           title={(
             <>
-              <Image src={require('../assets/img/johnsnow.png')} roundedCircle />
+              <Image src={userPicture} roundedCircle />
               <span className="font-weight-bold ml-3">John Snow</span>
             </>
 )}
